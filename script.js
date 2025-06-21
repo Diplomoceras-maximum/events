@@ -12,3 +12,9 @@
 // Method 2: Set Property in JS File
 const btn = document.querySelector("#btn");
 btn.onclick = () => alert("Hello World!");
+
+// Method 3: Event Listener
+const bestBtn = document.querySelector("#bestBtn");
+bestBtn.addEventListener("click", () => {
+  alert("Hello World!");
+});
