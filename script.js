@@ -44,3 +44,21 @@ bestBtn.addEventListener("click", () => {
     bestBtn.addEventListener("click", alertFunction);
 
 */
+
+// Callbacks
+
+// A callback is a function passed as an argument to another function
+// This technique allows a function to call another function
+// A callback function can run after another function has finished
+
+btn.addEventListener("click", function (e) {
+  console.log(e); // Provides information about that events target (DOM node)
+});
+
+btn.addEventListener("click", function (e) {
+  console.log(e.target); // <button id="btn">Click Me</button>
+});
+
+btn.addEventListener("click", function (e) {
+  e.target.style.background = "blue"; // <button id="btn" style="background: blue;">Click Me</button> (changed the button background to blue)
+});
