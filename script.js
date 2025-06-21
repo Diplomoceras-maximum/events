@@ -62,3 +62,14 @@ btn.addEventListener("click", function (e) {
 btn.addEventListener("click", function (e) {
   e.target.style.background = "blue"; // <button id="btn" style="background: blue;">Click Me</button> (changed the button background to blue)
 });
+
+// Attaching listeners to groups of nodes
+const buttons = document.querySelectorAll(".num");
+
+// .forEach iterates through all elements with class of "num"
+buttons.forEach((button) => {
+  // For each element we add a click listener
+  button.addEventListener("click", () => {
+    alert(button.id); // alert pop up with the name of the elements id
+  });
+});
