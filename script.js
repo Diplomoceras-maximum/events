@@ -18,3 +18,29 @@ const bestBtn = document.querySelector("#bestBtn");
 bestBtn.addEventListener("click", () => {
   alert("Hello World!");
 });
+
+// All 3 methods can also be used with named functions:
+
+// Method 2:
+/*
+
+    function alertFunction()  {
+        alert("Hello World!");
+    }
+
+    const btn.document.querySelector("#btn");
+    btn.onclick = alertFunction;
+
+*/
+
+// Method 3:
+/*
+
+    function alertFunction()  {
+        alert("Hello World!");
+    }
+
+    const bestBtn = document.querySelector("#bestBtn");
+    bestBtn.addEventListener("click", alertFunction);
+
+*/
