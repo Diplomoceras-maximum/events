@@ -8,3 +8,7 @@
 // Specify function attibutes directly in the HTML elements
 // Set properties on the DOM noes in javascript (onclick , onmousedown, etc)
 // Attach event listeners to the DOM nodes in javascript
+
+// Method 2: Set Property in JS File
+const btn = document.querySelector("#btn");
+btn.onclick = () => alert("Hello World!");
